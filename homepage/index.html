@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <title>Home | Trendy Threads</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <!-- go to top -->
+    <section>
+        <a href="#"><img src="img/gtt.png" alt="go-to-top-btn" class="go-to-top-btn"></a>
+    </section>
+
+
+    <!-- newsletter icon -->
+    <div id="news-icon">
+        <i class="fa fa-envelope"></i>
+    </div>
+
+
+
+    <!-- chat icon -->
+    <div id="chat-icon">
+        <i class="fa fa-comments"></i>
+    </div>
+
+
+
+    <!-- theme icon -->
+    <div id="theme-icon">
+        <i class="fa fa-adjust"></i>
+    </div>
+    
+
+
+    <!-- covid guidelines -->
+    <div id="covid">
+        <center>
+            <i class="fa fa-info-circle"></i>
+            Your orders are completely safe with us. In order to fight the global pandemic, 
+            we are following every guidelines given by the Govt. of India. Happy shopping!
+        </center>
+        <span id="closeCovid" onclick="closeCovid()">X</span>
+    </div>
+
+
+
+
+    <!-- cookie policy -->
+    <div class="cookie-policy">
+        <center>
+            <p>
+                We use cookies to improve user experience, and analyze website traffic. 
+                For these reasons, we may share your site usage data with our analytics partners. 
+                By clicking “Accept Cookies,” you consent to store on your device all the technologies described in our Cookie Policy.
+            </p>
+            <button id="acceptCookies">Accept</button>
+        </center>
+    </div>
+
+
+
+
+    <!-- newsletter -->
+    <div class="newsletter">
+        <center>
+            <span id="newsletter-btn" onclick="closeNewsletter()">X</span>
+            <i class="fa fa-envelope-open"></i>
+            <h1>Subscribe To Our Newsletter.</h1>
+            <p> Join our subscribers list to get the latest news, updates and special offers delivered at your fingertips!.</p>
+            <input type="number" id="newsletter-number" placeholder="Number" required maxlength="10">
+            <button type="submit" id="subscribe">Subscribe</button>
+        </center>
+    </div>
+
+
+
+
+    <!-- feedback -->
+    <div class="feedback">
+        <span class="closeFeedback" onclick="closeFeedback()">X</span>
+        <div id="feedback-toggle" onclick="openFeedback()">Feedback</div>
+        <h4>How satisfied are you with the website?</h4>
+        <div class="opt1"><p>Not satisfied.</p></div>
+        <div class="opt2"><p>Somewhat satisfied.</p></div>
+        <div class="opt3"><p>Satisfied.</p></div>
+        <div class="opt4"><p>Very satisfied.</p></div>
+        <div class="opt5"><p>Satisfied enough to tell others.</p></div>
+    </div>
+
+
+
+
+
+    <!-- chat box -->
+    <div class="chat-box">
+        <span id="chat-close">X</span>
+        <h4>How can I help you?</h4>
+        <textarea placeholder="Type here!"></textarea>
+        <button>Send</button>
+    </div>
+
+
+
+
+
+    <img src="img/logo.PNG" alt="site-logo" id="site-logo">
+    <!-- Navigation bar -->
+    <div id="nav-container">
+        <div id="nav-list">
+            <ul>
+                <li><a href="../category_page/index.html">Categories</a></li>
+                <li><a href="../cart/cart.html">Cart <img src="img/cart.png" alt="cart-img" style="height: 20px; width: 20px;"></a></li>
+                <li><a href="../wishlist/wishlist.html">Wishlist <img src="img/heart.png" alt="heart-img" style="height: 20px; width: 20px;"></a></li>
+                <li> <a href="../login-page/index.html"><i class="fa fa-user-circle"></i></a> </li>
+            </ul>
+            <ul>
+                <li><input type="text" id="search" placeholder="Search.."> <img src="img/search.png" alt="search-icon" id="search-icon"></li>
+            </ul>
+            <ul>
+                <li><a href="../gift/gift.html">Gift Cards</a></li>
+                <li><a href="../faq/faq.html">FAQs</a></li>
+                <li><a href="../download_app/index.html">Download</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sidenav-container">
+        <div class="sidenav">
+            <a class="closebtn" onclick="closeNav()">&times;</a>
+            <ul>
+                <li><a href="../category_page/index.html">Categories</a></li>
+                <li><a href="../cart/cart.html">Cart <img src="img/cart.png" alt="cart-img" style="height: 20px; width: 20px;"></a></li>
+                <li><a href="../wishlist/wishlist.html">Wishlist <img src="img/heart.png" alt="heart-img" style="height: 20px; width: 20px;"></a></li>
+            </ul>
+            <ul>
+                <li><a href="../gift/gift.html">Gift Cards</a></li>
+                <li><a href="../faq/faq.html">FAQs</a></li>
+                <li><a href="../download_app/index.html">Download</a></li>
+                <li> <a href="../login-page/index.html"><i class="fa fa-user-circle"></i></a> </li>
+            </ul>
+        </div>
+        <span class="openNav" onclick="openNav()"><img src="img/ham.png" alt="ham-menu-img"></span>
+    </div>
+
+
+
+
+
+
+    <!-- main page -->
+    <div id="content">
+
+        <!-- Home page main content-->
+        <div id="mainContent">
+            <div id="model1">
+                <img src="img/model5.jpg" alt="model1-img" class="mySlides fade">
+                <img src="img/model6.jpg" alt="model1-img" class="mySlides fade">
+                <img src="img/model2.jpg" alt="model1-img" class="mySlides fade">
+                <img src="img/model3.jpg" alt="model1-img" class="mySlides fade">
+                <p>“You either know fashion<br>or you don’t.”</p>
+            </div>
+
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br>
+
+            <center><p id="top">Our top picks..</p></center>
+            <br><br>
+            <div>
+                <div class="item-container">
+                    <div class="item-card" style="background-image: url(top/top1.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹799</span>
+                            <p>H&M</p>
+                            <p>Yellow One-Piece</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top2.jpg); background-size: cover; background-position: 10px 10px;">
+                        <div class="item-card-hover">
+                            <span>₹1099</span>
+                            <p>Prada</p>
+                            <p>Funky Suit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top3.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹999</span>
+                            <p>Hermes</p>
+                            <p>Blue Jacket</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top4.jpg); background-size: cover; background-position: 10px 0px;">
+                        <div class="item-card-hover">
+                            <span>₹799</span>
+                            <p>Zara</p>
+                            <p>Beach Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top5.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹999</span>
+                            <p>Chanel</p>
+                            <p>Full White Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top6.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover" style="color: black;">
+                            <span>₹999</span>
+                            <p>H&M</p>
+                            <p>Office Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top7.jpg); background-size: cover; background-position: -10px -5px;">
+                        <div class="item-card-hover">
+                            <span>₹1299</span>
+                            <p>Gucci</p>
+                            <p>Full Suit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(top/top8.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹899</span>
+                            <p>Zalando</p>
+                            <p>Yellow One-Piece</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br>
+
+            <center><p id="top">On Sale!</p></center>
+            <br><br><br>
+            <div>
+                <div class="item-container">
+                    <div class="item-card" style="background-image: url(demand/demand1.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover" style="color: black;">
+                            <span> <s>₹1599</s>  ₹1099</span>
+                            <p>Zara</p>
+                            <p>Casual Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand2.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1399</s>  ₹999</span>
+                            <p>Louis Vuitton</p>
+                            <p>Red Skirt</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand3.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover" style="color: black;">
+                            <span><s>₹999</s>  ₹899</span>
+                            <p>H&M</p>
+                            <p>Casual Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand4.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1499</s>  ₹999</span>
+                            <p>Zara</p>
+                            <p>Yellow Jacket</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand5.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1199</s>  ₹1099</span>
+                            <p>Gucci</p>
+                            <p>Black Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand6.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1799</s>  ₹1299</span>
+                            <p>Hermes</p>
+                            <p>Yellow and Green Dress</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand7.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1499</s>  ₹999</span>
+                            <p>Louis Phillip</p>
+                            <p>Blue Denim Jacket</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(demand/demand8.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span><s>₹1299</s>  ₹1099</span>
+                            <p>Zalando</p>
+                            <p>Black Leather Jacket</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br>
+
+            <center><p id="top">Based on your previous searches..</p></center>
+            <br><br><br>
+            <div>
+                <div class="item-container">
+                    <div class="item-card" style="background-image: url(searches/s1.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹599</span>
+                            <p>Adidas</p>
+                            <p>Plain White Tee</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s2.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹899</span>
+                            <p>Bare Denim</p>
+                            <p>Black Rugged Jeans</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s3.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹599</span>
+                            <p>Nike</p>
+                            <p>Plain White Tee</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s4.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹999</span>
+                            <p>Levis</p>
+                            <p>Blue Jeans</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s5.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹1199</span>
+                            <p>Gucci</p>
+                            <p>Pink Hoodie</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s6.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹999</span>
+                            <p>Levis</p>
+                            <p>White Rugged Jeans</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s7.jpg); background-size: cover; background-position: -250px center;"> 
+                        <div class="item-card-hover">
+                            <span>₹799</span>
+                            <p>Levis</p>
+                            <p>Yellow Sweater</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(searches/s8.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹1599</span>
+                            <p>Louis Vuitton</p>
+                            <p>Full Outfit</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br>
+
+            <center><p id="top">Accessories</p></center>
+            <br><br><br>
+            <div>
+                <div class="item-container">
+                    <div class="item-card" style="background-image: url(accessories/a1.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹1999</span>
+                            <p>Rolex</p>
+                            <p>Watch</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a2.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹1099</span>
+                            <p>Gucci</p>
+                            <p>Ring</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a3.jpg); background-size: cover; background-position: -240px;"> 
+                        <div class="item-card-hover" style="color: black;">
+                            <span>₹1399</span>
+                            <p>Ray Ban</p>
+                            <p>Glares</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a4.jpg); background-size: cover; background-position: center;">
+                        <div class="item-card-hover">
+                            <span>₹1399</span>
+                            <p>Titan</p>
+                            <p>Watch</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a5.jpg); background-size: cover; background-position: -220px;">
+                        <div class="item-card-hover">
+                            <span>₹2299</span>
+                            <p>Armani</p>
+                            <p>Watch</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a6.jpg); background-size: cover; background-position: -250px;"> 
+                        <div class="item-card-hover">
+                            <span>₹1399</span>
+                            <p>Ray Ban</p>
+                            <p>Sunglasses</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a7.jpg); background-size: cover; background-position: center;"> 
+                        <div class="item-card-hover">
+                            <span>₹1999</span>
+                            <p>Prada</p>
+                            <p>Ring Necklace</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                    <div class="item-card" style="background-image: url(accessories/a8.jpg); background-size: cover; background-position: -90px;"> 
+                        <div class="item-card-hover">
+                            <span>₹1099</span>
+                            <p>Tanishq</p>
+                            <p>Rings</p>
+                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br><br><br><br>  <hr>  <br><br><br>
+
+
+
+            <!-- about us -->
+            <center><p id="top">About us</p></center>
+            <div id="about-us"> <br><br><br>
+                <div id="abt-outer">
+                    <center>
+                        <div id="abt-inner">
+                            <p>
+                            Welcome to Trendy Threads, the number one source for your fashion. <br>
+                            We're dedicated to providing you the very best of our products with an emphasis on animal-free clothing brands, user friendly, and many more.<br>
+                            We now serve customers all over the world, and are thrilled that we're able to turn our passion into our own website.<br>
+                            We hope you enjoy our products as much as we enjoy offering them to you. <br>
+                            If you have any questions or comments, please don't hesitate to contact us. <br><br>
+                            Sincerely, <br>
+                            Trendy Threads Team.
+                            </p>
+                        </div>
+                    </center>
+                </div> 
+            </div>
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br>
+
+
+            
+            <!-- contact us -->
+            <div id="contact">
+                <!-- <div id="contact-us-bg"></div> -->
+                <div id="contact-main">
+                    <center><p id="top">Get in touch!</p></center> <br>
+                    <center>
+                        <div id="contact-container">
+                            <div id="contact-info">
+                                <center>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.1751349614747!2d76.6575891150809!3d30.51608648171321!2m
+                                    3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc32344a6e2d7%3A0x81b346dee91799ca!2sChitkara%20University!5e0!3m2!1sen!2s
+                                    in!4v1620015556907!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </center>
+                                <div>
+                                    <i class="fa fa-phone"></i> 
+                                    <span>Phone:</span> <br>
+                                    <p>+919876543210</p>
+                                </div>
+                                <i class="fa fa-paper-plane"></i> <span>Email:</span>
+                                <p>trendythreads@gmail.com</p>
+                            </div>
+
+                            <div id="contact-us">
+                                <p>Fill the form.</p>
+                                <p>It's easy!</p>
+                                <center>
+                                    <input type="text" id="name1" placeholder="Name" required>
+                                    <input type="email" id="email1" placeholder="Email" required>
+                                    <textarea name="msg" id="msg" placeholder="Message..." required></textarea>
+                                    <br><br> <button id="send">Send</button>
+                                </center>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+
+
+            <br><br><br><br><br>  <hr>  <br><br><br><br><br><br>
+
+            <center><p class="copyright" style="color: white; font-family: 'Poppins', sans-serif;">© 2021 Trendy Threads.</p></center>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- social handles -->
+    <div id="social">
+        <div class="icon">
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook-f"></i> </a> 
+            <a href="https://telegram.org/" target="_blank"> <i class="fa fa-telegram"></i> </a> 
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i> </a> 
+            <a href="https://twitter.com/?lang=en" target="_blank"> <i class="fa fa-twitter"></i> </a> 
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i> </a>
+        </div>
+        <div id="arrow">
+            <img src="img/arrow_front.png" alt="arrow_front" onclick="showSocial()">
+        </div>
+    </div>
+
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='script.js'></script>
+</body>
+
+</html>
